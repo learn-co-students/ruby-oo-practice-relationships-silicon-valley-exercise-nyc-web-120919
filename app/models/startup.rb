@@ -10,6 +10,11 @@ class Startup
     @@all << self
   end
 
+  def pivot(new_domain, new_name)
+    @domain = new_domain
+    @name = new_name
+  end
+
   def sign_contract(venture_capitalist, type, investment)
     FundingRound.new(self, venture_capitalist, type, investment)
   end
@@ -39,6 +44,14 @@ class Startup
     # checking to see if big_investors includes the investor and if
     # it does it will select and return an array, if false and
     # doesn't store info in array
+  end
+
+  def self.find_by_founder(founder_name)
+    self.all.find {|startup| startup.founder == founder_name}
+  end
+
+  def self.domains
+    self.all.map(&:domain).uniq
   end
 
   def self.all

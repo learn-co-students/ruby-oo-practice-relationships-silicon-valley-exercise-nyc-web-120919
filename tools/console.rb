@@ -10,10 +10,10 @@ end
 s1 = Startup.new("cooknow", "eunice")
 s2 = Startup.new("juiceme", "deborah", "juiceme.com")
 s3 = Startup.new("letshelp", "christine", "letshelp.com")
-s4 = Startup.new("eattogether", "eattogether.com")
+s4 = Startup.new("eattogether", "steven", "eattogether.com")
 s5 = Startup.new("noming", "rachael", "noming")
 s6 = Startup.new("errrdayeats", "justin", "errrdayeats")
-s7 = Startup.new("cookcookaway", "yoonji", "cookcookaway")
+s7 = Startup.new("cookcookaway", "steven", "cookcookaway")
 
 v1 = VentureCapitalist.new("sarah", 1600000)
 v2 = VentureCapitalist.new("josh", 10009000000)
